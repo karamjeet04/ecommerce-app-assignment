@@ -1,0 +1,1 @@
+export const PRODUCT_API_URL = 'https://findify-assets.s3.amazonaws.com/test-task/test_response.json';

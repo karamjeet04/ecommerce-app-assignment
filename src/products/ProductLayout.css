@@ -1,0 +1,121 @@
+  .parentDiv {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    padding: 0px;
+  }
+  .search-section {
+    width: 20%;
+  }
+  .product-container {
+    width: 80%;
+  }
+
+  .imageclass {
+    width: 15.4375rem;
+    height: 321px;
+  }
+  .producttitle {
+    font-family: "Robto";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .heading{
+    text-align: center;
+  }
+ 
+  .productprice {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .materialclass{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    margin: 0px 10px;
+  }
+  .checkboxstyle{
+    width: 20px;
+    height: 20px;
+    border-radius: 1px;
+    border: 1px;
+    margin-right:20px;
+  }
+  .textname{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .moreclass{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: none;
+    background: white;
+    cursor: pointer;
+  }
+  .roundcirlce{
+    width: 20px;
+    height: 20px;
+    color: transparent;
+    border-radius: 50%;
+    border: none;
+  }
+
+
+  .product-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .product {
+    padding: 2px;
+    box-sizing: border-box;
+  }
+
+  /* Media queries for responsive layout */
+  @media (max-width: 1279px) {
+    .product-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 990px) {
+    .product-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 767px) {
+    .product-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 499px) {
+    .product-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 399px) {
+    .product-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
